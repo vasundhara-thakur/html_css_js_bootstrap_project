@@ -1,0 +1,85 @@
+@media (max-width: 767px) {
+    .profile-img {
+      width: 200px;
+      height: 200px;
+    }
+  
+    #home h1 {
+      font-size: 1.5rem;
+    }
+  
+    .card {
+      margin-bottom: 20px;
+    }
+   
+    .navbar-brand {
+      font-size: 1.2rem; 
+    }
+  
+    .navbar-nav {
+      text-align: center; 
+    }
+  
+    .nav-item {
+      margin-bottom: 10px; 
+    }
+    
+  }
+
+  @media (max-width: 768px) {
+    .project-container {
+      flex-direction: column-reverse;
+      padding: 20px;
+    }
+
+    .project-description h2 {
+      font-size: 26px;
+    }
+
+    #home, #about, #skills, #projects, #contact {
+      padding: 5vh 0;
+    }
+    
+    .profile-img {
+      width: 150px; 
+      height: 150px;
+    }
+  
+    .project-container {
+      flex-direction: column; 
+      padding: 10px; 
+   }
+  
+    .project-description h2 {
+      font-size: 20px; 
+   }
+
+  }
+
+    
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade {
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+  }
+  
+  .delay-1 {
+    animation-delay: 0.2s;
+  }
+  .delay-2 {
+    animation-delay: 0.4s;
+  }
+  .delay-3 {
+    animation-delay: 0.6s;
+  }

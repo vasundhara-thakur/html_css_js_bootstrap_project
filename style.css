@@ -1,0 +1,97 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+:root {
+    --bg-color: #162d36;
+    --snd-bg-color: #1f3d4a ;
+    --txt-color: #5ed3d1db;
+    --snd-txt-color: #fff;
+}
+
+body{
+    background: var(--bg-color) !important ;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+  #home, #about, #skills, #projects {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  #about {
+    background: var(--snd-bg-color);
+    color: var(--snd-txt-color);
+  }
+
+  .skill-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: var(--snd-bg-color);
+  }
+
+  .skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+  }
+  
+  .projects{
+    background: var(--snd-bg-color);
+  }
+  
+  .project-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background: var(--bg-color);
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .project-description {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .project-description h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--txt-color);
+  }
+
+  .project-description p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--snd-txt-color);
+  }
+
+  .project-image {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .project-image img {
+    width: 85%;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
